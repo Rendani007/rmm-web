@@ -58,9 +58,14 @@ export function Nav() {
 
           {/* Desktop CTA */}
           <div className="hidden items-center gap-2 md:flex">
-            <button className="rounded-lg px-3 py-1.5 text-sm text-muted-foreground transition hover:text-foreground">
+            <a
+              href="https://rmm-nexus-production.up.railway.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg px-3 py-1.5 text-sm text-muted-foreground transition hover:text-foreground"
+            >
               Sign in
-            </button>
+            </a>
           </div>
 
           {/* Mobile hamburger */}
@@ -134,9 +139,15 @@ export function Nav() {
 
               {/* CTA at the bottom */}
               <div className="border-t border-border/60 p-6">
-                <button className="flex w-full items-center justify-center rounded-xl border border-border py-3 text-sm font-semibold text-foreground transition hover:border-teal/30 hover:bg-teal/5">
+                <a
+                  href="https://rmm-nexus-production.up.railway.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeMenu}
+                  className="flex w-full items-center justify-center rounded-xl border border-border py-3 text-sm font-semibold text-foreground transition hover:border-teal/30 hover:bg-teal/5"
+                >
                   Sign in
-                </button>
+                </a>
               </div>
             </motion.div>
           </>
