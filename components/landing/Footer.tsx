@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex flex-wrap items-center gap-5">
           <div className="flex items-center gap-2 rounded-full border border-teal/30 bg-teal/5 px-3 py-1 text-[10px] font-medium text-teal">
             <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-teal shadow-[0_0_8px_var(--teal-glow)]" />
-            Industrial ERP — v4.2 Live
+            Early Access Preview
           </div>
           <a href="#" className="hover:text-foreground">Privacy</a>
           <a href="#" className="hover:text-foreground">Security</a>

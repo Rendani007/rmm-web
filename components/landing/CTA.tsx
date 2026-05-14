@@ -26,7 +26,7 @@ export function CTA() {
           Run operations <span className="text-gradient">that cannot fail.</span>
         </h2>
         <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
-          RMM is currently in closed development. Follow our progress and be first to know when we launch.
+          RMM is currently available through our exclusive Early Access Program. Partner with us to refine the future of industrial ERP.
         </p>
 
         {/* Get in touch button */}
