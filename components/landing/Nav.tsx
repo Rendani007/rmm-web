@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 
 const links = [
+  { label: "About", href: "#about" },
   { label: "Platform", href: "#platform" },
   { label: "Architecture", href: "#architecture" },
   { label: "Security", href: "#security" },
