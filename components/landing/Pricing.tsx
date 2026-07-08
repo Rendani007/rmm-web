@@ -101,7 +101,7 @@ export function Pricing() {
                 <span className="text-sm font-semibold leading-6 text-muted-foreground">/month</span>
               </p>
               <Link
-                href="http://localhost:5173/register"
+                href={`${process.env.NEXT_PUBLIC_APP_URL}/register`}
                 className={`mt-6 block rounded-xl px-3 py-3 text-center text-sm font-semibold leading-6 transition ${
                   plan.popular
                     ? "bg-teal/20 text-teal hover:bg-teal/30 border border-teal/40"
