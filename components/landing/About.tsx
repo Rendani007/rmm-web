@@ -23,18 +23,18 @@ const pillars = [
 
 const sectors = [
   {
-    title: "Mining & Extraction",
-    desc: "Track ore yields from pit to processing, monitor equipment health, and manage shift logs instantly.",
+    title: "Retail & E-Commerce",
+    desc: "Sync stock across multiple storefronts, track fast-moving goods, and manage precise reorder levels.",
     icon: Pickaxe,
   },
   {
-    title: "Manufacturing",
-    desc: "Keep a real-time pulse on raw material inventory, assembly line throughput, and quality control.",
+    title: "Wholesale Distributors",
+    desc: "Keep a real-time pulse on bulk inventory, fulfill massive orders accurately, and manage B2B pricing.",
     icon: Factory,
   },
   {
     title: "Logistics & Warehousing",
-    desc: "Optimize supply chain routes, track fleet movements, and manage stock levels across multiple depots.",
+    desc: "Optimize supply chain routing, track fleet movements, and manage stock levels across multiple depots.",
     icon: Truck,
   },
   {
@@ -64,7 +64,7 @@ export function About() {
               What is <span className="text-gradient">RMM?</span>
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
-              Think of RMM as the digital nervous system for your entire industrial operation. 
+              Think of RMM as the digital nervous system for your entire supply chain and inventory. 
               We take the messy, confusing, and error-prone spreadsheets you currently rely on and replace them 
               with a single, clear, real-time platform.
             </p>

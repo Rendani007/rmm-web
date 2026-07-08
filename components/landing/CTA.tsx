@@ -13,7 +13,7 @@ export function CTA() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section id="pricing" className="relative overflow-hidden border-t border-border/60 py-20 md:py-28">
+    <section className="relative overflow-hidden border-t border-border/60 py-20 md:py-28">
       <div className="absolute inset-0 [background:var(--gradient-radial)]" aria-hidden />
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -23,10 +23,10 @@ export function CTA() {
         className="glass-strong relative mx-auto max-w-4xl rounded-3xl px-6 py-12 text-center md:px-8 md:py-16"
       >
         <h2 className="font-display text-3xl font-extrabold leading-tight md:text-5xl">
-          Run operations <span className="text-gradient">that cannot fail.</span>
+          Questions about <span className="text-gradient">Enterprise?</span>
         </h2>
         <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
-          RMM is currently available through our exclusive Early Access Program. Partner with us to refine the future of industrial ERP.
+          Need custom API integrations, massive scale, or on-premise solutions? Our engineering team is ready to build with you.
         </p>
 
         {/* Get in touch button */}

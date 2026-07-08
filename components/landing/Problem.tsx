@@ -60,7 +60,7 @@ export function Problem() {
             <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-border">
               <img 
                 src="/assets/mine.png" 
-                alt="Mining Operations" 
+                alt="Omnichannel Operations" 
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
@@ -72,8 +72,8 @@ export function Problem() {
               </div>
 
               <div className="absolute bottom-6 left-6">
-                <span className="text-[10px] font-mono uppercase tracking-widest text-teal">Sector 01 // Extraction</span>
-                <h3 className="font-display text-2xl font-bold">Mining Asset Control</h3>
+                <span className="text-[10px] font-mono uppercase tracking-widest text-teal">Supply Chain // Visibility</span>
+                <h3 className="font-display text-2xl font-bold">Omnichannel Operations</h3>
               </div>
             </div>
             
@@ -108,7 +108,7 @@ export function Problem() {
               </div>
 
               <div className="absolute bottom-6 left-6">
-                <span className="text-[10px] font-mono uppercase tracking-widest text-blue-400">Sector 02 // Logistics</span>
+                <span className="text-[10px] font-mono uppercase tracking-widest text-blue-400">Inventory // Control</span>
                 <h3 className="font-display text-2xl font-bold">Intelligent Warehousing</h3>
               </div>
             </div>
