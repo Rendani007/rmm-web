@@ -60,7 +60,7 @@ export function Nav() {
           {/* Desktop CTA */}
           <div className="hidden items-center gap-2 md:flex">
             <a
-              href={`${process.env.NEXT_PUBLIC_APP_URL}/login`}
+              href={`${process.env.NEXT_PUBLIC_APP_URL || 'https://rmm-nexus-production.up.railway.app'}/login`}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg px-3 py-1.5 text-sm text-muted-foreground transition hover:text-foreground"
@@ -141,7 +141,7 @@ export function Nav() {
               {/* CTA at the bottom */}
               <div className="border-t border-border/60 p-6">
                 <a
-                  href={`${process.env.NEXT_PUBLIC_APP_URL}/login`}
+                  href={`${process.env.NEXT_PUBLIC_APP_URL || 'https://rmm-nexus-production.up.railway.app'}/login`}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={closeMenu}
