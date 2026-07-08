@@ -6,18 +6,18 @@ import { Vault, Boxes, Globe2 } from "lucide-react";
 const features = [
   {
     icon: Vault,
-    title: "Physical Isolation",
-    desc: "Each tenant runs in its own dedicated database. Zero shared rows. Zero cross-contamination. Compliance by architecture.",
+    title: "Smart Barcode Scanning",
+    desc: "Built-in GS1 and AI barcode parsing. Scan, identify, and move stock instantly without expensive proprietary hardware.",
   },
   {
     icon: Boxes,
-    title: "Modular Core",
-    desc: "Composable apps that snap together. Inventory, finance, manufacturing, HR — turn modules on as you scale, never refactor.",
+    title: "Multi-Location Control",
+    desc: "Track inventory across unlimited warehouses and departments. Execute precise stock transfers with batch numbers and expiry tracking.",
   },
   {
     icon: Globe2,
-    title: "African Optimized",
-    desc: "Built for low-bandwidth conditions, multi-currency operations, and the regulatory landscape of South African industry.",
+    title: "Risk & Compliance",
+    desc: "Integrated Risk Registers and Incident Reporting. Keep your operations compliant and your workforce safe with automated trails.",
   },
 ];
 

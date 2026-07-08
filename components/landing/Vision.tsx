@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { LineChart, Clock4, ShieldHalf } from "lucide-react";
 
 const pillars = [
-  { icon: LineChart, title: "ERP Beyond Borders", desc: "Multi-entity, multi-currency, multi-jurisdiction — all native." },
-  { icon: Clock4, title: "Predictive Power", desc: "Forecasting models that learn your supply chain, not generic curves." },
-  { icon: ShieldHalf, title: "Security First", desc: "Architecture so isolated, breaches stop at the schema boundary." },
+  { icon: LineChart, title: "Total Visibility", desc: "Know exactly what you have, where it is, and when it expires in real-time." },
+  { icon: Clock4, title: "Predictive Stock", desc: "AI-driven minimum levels and smart reorder alerts so you never run dry." },
+  { icon: ShieldHalf, title: "Compliance First", desc: "Built-in risk registers and incident logs to keep your team safe and compliant." },
 ];
 
 export function Vision() {

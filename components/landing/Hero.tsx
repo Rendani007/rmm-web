@@ -30,7 +30,7 @@ export function Hero() {
             Precision <span className="text-gradient">At Scale</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-balance text-base text-muted-foreground sm:text-lg">
-            The industrial ERP engineered for operations that cannot fail. Modular core, multi-schema vault security, optimized for the African enterprise.
+            Modern inventory, warehouse, and risk management software built for growing businesses. Get total control over your supply chain in 5 minutes.
           </p>
           <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <a href="#architecture" className="glass rounded-xl px-5 py-3.5 text-center text-sm font-semibold text-foreground transition hover:border-teal/30">
