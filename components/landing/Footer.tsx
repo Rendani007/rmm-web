@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Footer() {
   return (
     <footer className="border-t border-border/60 py-10">
@@ -11,9 +13,10 @@ export function Footer() {
             <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-teal shadow-[0_0_8px_var(--teal-glow)]" />
             Early Access Preview
           </div>
-          <a href="#" className="hover:text-foreground">Privacy</a>
-          <a href="#" className="hover:text-foreground">Security</a>
-          <a href="#" className="hover:text-foreground">Status</a>
+          <Link href="/terms-of-service" className="hover:text-foreground">Terms</Link>
+          <Link href="/privacy-policy" className="hover:text-foreground">Privacy</Link>
+          <Link href="/refund-policy" className="hover:text-foreground">Refunds</Link>
+          <Link href="/cancellation-policy" className="hover:text-foreground">Cancellations</Link>
         </div>
       </div>
     </footer>
