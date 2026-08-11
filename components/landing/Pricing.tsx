@@ -1,8 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import Link from "next/link";
+import { InteractivePlanBuilder } from "./InteractivePlanBuilder";
 
 const plans = [
   {
@@ -49,6 +51,8 @@ const plans = [
 ];
 
 export function Pricing() {
+  const [isBuilderOpen, setIsBuilderOpen] = useState(false);
+
   return (
     <section id="pricing" className="relative overflow-hidden py-24 md:py-32">
       <div className="absolute inset-0 [background:var(--gradient-radial)]" aria-hidden />
@@ -101,7 +105,7 @@ export function Pricing() {
                 <span className="text-sm font-semibold leading-6 text-muted-foreground">/month</span>
               </p>
               <Link
-                href={`${process.env.NEXT_PUBLIC_APP_URL || 'https://rmm-nexus-production.up.railway.app'}/register`}
+                href={`${process.env.NEXT_PUBLIC_APP_URL || 'https://rmm-nexus-production.up.railway.app'}/register?plan=${plan.name.toLowerCase()}`}
                 className={`mt-6 block rounded-xl px-3 py-3 text-center text-sm font-semibold leading-6 transition ${
                   plan.popular
                     ? "bg-teal/20 text-teal hover:bg-teal/30 border border-teal/40"
@@ -124,7 +128,36 @@ export function Pricing() {
             </motion.div>
           ))}
         </div>
+
+        {/* Custom Plan Banner */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5, type: "spring", stiffness: 100, damping: 20 }}
+          className="mx-auto mt-16 max-w-4xl rounded-3xl glass-strong ring-1 ring-border/50 p-8 sm:p-10 lg:flex lg:items-center lg:justify-between"
+        >
+          <div>
+            <h3 className="text-2xl font-bold tracking-tight text-foreground">Need a bespoke solution?</h3>
+            <p className="mt-4 text-muted-foreground max-w-2xl">
+              Get a custom tailored setup with dedicated support, on-premise deployment options, bespoke SLA, and unlimited quotas.
+            </p>
+          </div>
+          <div className="mt-8 flex items-center gap-x-4 lg:mt-0 lg:shrink-0">
+            <button
+              onClick={() => setIsBuilderOpen(true)}
+              className="rounded-xl bg-teal px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-teal/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal transition-all"
+            >
+              Build Your Plan
+            </button>
+          </div>
+        </motion.div>
       </div>
+
+      <InteractivePlanBuilder 
+        isOpen={isBuilderOpen} 
+        onClose={() => setIsBuilderOpen(false)} 
+      />
     </section>
   );
 }
