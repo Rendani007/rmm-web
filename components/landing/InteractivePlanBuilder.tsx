@@ -30,7 +30,7 @@ export function InteractivePlanBuilder({ isOpen, onClose }: InteractivePlanBuild
   const handleCheckout = () => {
     // In a real app, this redirects to the registration/checkout flow
     // with the URL parameters so the app knows what to build.
-    const url = new URL(`${process.env.NEXT_PUBLIC_APP_URL || 'https://rmm-nexus-production.up.railway.app'}/register`);
+    const url = new URL(`${process.env.NEXT_PUBLIC_APP_URL || 'https://app.rmmanagement.co.za'}/register`);
     url.searchParams.set('plan', 'custom');
     url.searchParams.set('users', users.toString());
     url.searchParams.set('locations', locations.toString());
@@ -82,6 +82,15 @@ export function InteractivePlanBuilder({ isOpen, onClose }: InteractivePlanBuild
                       className="w-full accent-teal"
                     />
                     <p className="text-xs text-muted-foreground mt-1">2 included, +R99 per extra</p>
+                    {users >= 50 && (
+                      <div className="mt-2 rounded-xl border border-teal/20 bg-teal/5 p-3 text-xs text-muted-foreground">
+                        <strong className="text-foreground block mb-0.5">Need 50 to 300+ Staff?</strong>
+                        Qualify for Enterprise Bespoke with volume discounts, dedicated WhatsApp account management & custom SLAs.{' '}
+                        <a href="mailto:sales@resourcemodular.com?subject=Enterprise%20Plan%20Inquiry%20(50%2B%20Staff)" className="text-teal font-semibold underline">
+                          Contact Sales
+                        </a>
+                      </div>
+                    )}
                   </div>
 
                   <div>
@@ -102,7 +111,7 @@ export function InteractivePlanBuilder({ isOpen, onClose }: InteractivePlanBuild
                     
                     <label className="flex items-start justify-between cursor-pointer group rounded-lg p-2 -mx-2 hover:bg-muted/50 transition-colors">
                       <div className="flex flex-col gap-1 pr-4">
-                        <span className="text-sm font-medium text-foreground">Advanced AI Scanning</span>
+                        <span className="text-sm font-medium text-foreground">Advanced AI Scanning <span className="text-teal text-xs ml-1 font-bold">(Early Access)</span></span>
                         <span className="text-xs text-muted-foreground leading-relaxed">
                           Automatically reads text, serial numbers, and blurry barcodes using your phone camera, saving your team hours of manual typing.
                         </span>
